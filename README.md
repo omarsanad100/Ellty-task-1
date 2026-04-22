@@ -1,6 +1,6 @@
-# 🚀 Page Selector App – Tech Stack Overview
+# Checkbox Task – Tech Stack Overview
 
-## 🧰 Core Technologies
+## Core Technologies
 
 - **Framework**: React (Vite)
 - **Language**: TypeScript
@@ -10,7 +10,7 @@
 
 ---
 
-## 🧩 App Structure
+## App Structure
 
 ### 1. UI Layer
 
@@ -37,14 +37,13 @@
 
 ---
 
-## ✅ Key Features
+## Key Features
 
 - **Custom Checkbox States + Conditional Rendering**: Checked, unchecked, and indeterminate states are conditionally rendered with hover/press visuals
 
 ---
 
-
-## ▶️ Run Locally
+## Run Locally
 
 ```bash
 npm install
