@@ -1,4 +1,4 @@
-export const CheckboxUncheckedState = () => {
+export const CheckboxIndicatorUnchecked = () => {
   return (
     <div
       className='relative flex items-center justify-center w-[23px] h-[23px] rounded-[6px] border border-[#CDCDCD] bg-white transition-all

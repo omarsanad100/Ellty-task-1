@@ -1,4 +1,4 @@
-export const CheckboxIndeterminateState = () => {
+export const CheckboxIndicatorIndeterminate = () => {
   return (
     <div
       className='relative flex items-center justify-center w-[23px] h-[23px] rounded-[6px] border-2 border-blue-500 bg-white transition-all

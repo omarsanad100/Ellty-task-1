@@ -1,18 +1,18 @@
 import { useState } from 'react'
-import { CheckboxCheckedState } from './Checkbox-checked-state'
-import { CheckboxIndeterminateState } from './Checkbox-indeterminate-state'
-import { CheckboxUncheckedState } from './Checkbox-unchecked-state'
+import { CheckboxIndicatorChecked } from './CheckboxIndicatorChecked.tsx'
+import { CheckboxIndicatorIndeterminate } from './CheckboxIndicatorIndeterminate.tsx'
+import { CheckboxIndicatorUnchecked } from './CheckboxIndicatorUnchecked.tsx'
 
 interface Props {
   checked: boolean
-  indeterminate?: boolean
+  isIndeterminate?: boolean
   onChange: () => void
   label: string
 }
 
 export const Checkbox = ({
   checked,
-  indeterminate = false,
+  isIndeterminate = false,
   onChange,
   label
 }: Props) => {
@@ -45,16 +45,16 @@ export const Checkbox = ({
         type='checkbox'
         checked={checked}
         onChange={onChange}
-        aria-checked={indeterminate ? 'mixed' : checked}
+        aria-checked={isIndeterminate ? 'mixed' : checked}
         className='peer sr-only'
       />
 
-      {indeterminate ? (
-        <CheckboxIndeterminateState />
+      {isIndeterminate ? (
+        <CheckboxIndicatorIndeterminate />
       ) : checked ? (
-        <CheckboxCheckedState />
+        <CheckboxIndicatorChecked />
       ) : (
-        <CheckboxUncheckedState />
+        <CheckboxIndicatorUnchecked />
       )}
     </label>
   )
